@@ -1,5 +1,6 @@
 package distracker.hackwestern;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -53,4 +54,13 @@ public class Distracker extends AppCompatActivity {
         // The activity is about to be destroyed.
     }
 
+    public void gotoMainPage(View view){
+        //go to app mainpage
+        Intent intent = new Intent(this, MainpageActivity.class);
+
+        //TODO get user information to send
+
+        startActivity(intent);
+
+    }
 }
