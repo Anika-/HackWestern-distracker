@@ -5,4 +5,8 @@
     <string name="login_message">Username</string>
     <string name="password_message">Password</string>
     <string name="facebook_app_id"></string>
+    <string name="title_activity_mainpage">MainpageActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>
