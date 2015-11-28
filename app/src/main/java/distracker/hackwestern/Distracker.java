@@ -19,7 +19,7 @@ public class Distracker extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_distracker);
 
-       LoginButton facebookLogin = (LoginButton) findViewById(R.layout.fblogin_button);
+       LoginButton facebookLogin = (LoginButton) findViewById(R.id.fblogin_button);
     }
 
     @Override
@@ -42,5 +42,15 @@ public class Distracker extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // The activity is no longer visible (it is now "stopped")
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // The activity is about to be destroyed.
+    }
 
 }
