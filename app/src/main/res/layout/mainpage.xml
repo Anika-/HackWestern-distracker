@@ -9,16 +9,13 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
-
-    android:layout_alignWithParentIfMissing="true"
-    >
+    android:layout_alignWithParentIfMissing="true">
     <!-- The main content view -->
     <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/shattered_2"
-        >
+        android:background="@drawable/shattered_2" >
     </FrameLayout>
 
     <include
