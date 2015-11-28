@@ -2,11 +2,12 @@
 package="distracker.hackwestern">
 
 <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name"
-    android:supportsRtl="true" android:theme="@style/AppTheme">
+    android:supportsRtl="true" android:theme="@style/Theme.Meuestilo">
     <meta-data android:name="com.facebook.sdk.ApplicationId"
         android:value="@string/facebook_app_id" />
 
-    <activity android:name=".Distracker" android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar">
+    <activity android:name=".Distracker" android:label="@string/app_name"
+        android:theme="@style/Theme.Meuestilo">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +19,7 @@ package="distracker.hackwestern">
         android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" />
 
     <activity android:name="distracker.hackwestern.MainpageActivity" android:label="@string/title_activity_mainpage"
-        android:theme="@style/MainPageTheme"></activity>
+        android:theme="@style/Theme.Meuestilo"></activity>
 
 </application>
 
