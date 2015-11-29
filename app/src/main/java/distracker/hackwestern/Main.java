@@ -17,7 +17,7 @@ import android.view.MenuItem;
 import android.net.Uri;
 
 public class Main extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, StatisticsFragment.OnFragmentInteractionListener   {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,8 +97,8 @@ public class Main extends AppCompatActivity
         return true;
     }
 
-    public void onFragmentInteraction
-            (Uri uri){
-        //you can leave it empty
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }
