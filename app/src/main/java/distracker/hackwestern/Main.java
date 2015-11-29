@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.net.Uri;
 
 public class Main extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -33,9 +34,6 @@ public class Main extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-
-
 
     }
 
@@ -81,11 +79,10 @@ public class Main extends AppCompatActivity
             // Handle the apps to be selected
         } else if (id == R.id.nav_stats) {
             //TODO open fragment relative to statistics
-            Bundle arguments = new Bundle();
-            FragmentManager fragmentManager = getFragmentManager();
-            android.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            StatisticsFragment frag =  new StatisticsFragment();
-            fragmentTransaction.add(R.id.statisticsFragment, frag);
+            StatisticsFragment fragment = new StatisticsFragment();
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.fragment_placeholder, fragment);
+            ft.commit();
 
         } else if (id == R.id.nav_settings) {
 
@@ -98,5 +95,10 @@ public class Main extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void onFragmentInteraction
+            (Uri uri){
+        //you can leave it empty
     }
 }
