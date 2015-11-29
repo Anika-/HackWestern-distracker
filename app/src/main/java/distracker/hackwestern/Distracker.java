@@ -54,7 +54,7 @@ public class Distracker extends AppCompatActivity {
 
     public void gotoMainPage(View view){
         //go to app mainpage
-        Intent intent = new Intent(this, MainpageActivity.class);
+        Intent intent = new Intent(this, Main.class);
 
         //TODO get user information to send
 

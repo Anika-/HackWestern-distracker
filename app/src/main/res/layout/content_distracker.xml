@@ -12,8 +12,6 @@
     tools:context="distracker.hackwestern.Distracker"
     tools:showIn="@layout/activity_distracker">
 
-
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

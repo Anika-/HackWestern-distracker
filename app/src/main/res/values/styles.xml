@@ -1,85 +1,34 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.Meuestilo">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
-
     </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-
-
     </style>
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <!--Style Trial-->
 
-    <style name="Theme.Meuestilo" parent="@style/Theme.AppCompat">
-        <item name="actionBarItemBackground">@drawable/selectable_background_meuestilo</item>
-        <item name="popupMenuStyle">@style/PopupMenu.Meuestilo</item>
-        <item name="dropDownListViewStyle">@style/DropDownListView.Meuestilo</item>
-        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Meuestilo</item>
-        <item name="actionDropDownStyle">@style/DropDownNav.Meuestilo</item>
-        <item name="actionBarStyle">@style/ActionBar.Solid.Meuestilo</item>
-        <item name="actionModeBackground">@drawable/cab_background_top_meuestilo</item>
-        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_meuestilo</item>
-        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Meuestilo</item>
-
-
-    </style>
+    <style name="Theme.Meuestilo" parent="Theme.AppCompat.Light.DarkActionBar" />
 
     <style name="ActionBar.Solid.Meuestilo" parent="@style/Widget.AppCompat.ActionBar.Solid">
-        <item name="background">@drawable/ab_solid_meuestilo</item>
-        <item name="backgroundStacked">@drawable/ab_stacked_solid_meuestilo</item>
-        <item name="backgroundSplit">@drawable/ab_bottom_solid_meuestilo</item>
-        <item name="progressBarStyle">@style/ProgressBar.Meuestilo</item>
+
     </style>
 
-    <style name="ActionBar.Transparent.Meuestilo" parent="@style/Widget.AppCompat.ActionBar">
-        <item name="background">@drawable/ab_transparent_meuestilo</item>
-        <item name="progressBarStyle">@style/ProgressBar.Meuestilo</item>
+    <style name="Theme.Meuestilo.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="PopupMenu.Meuestilo" parent="@style/Widget.AppCompat.PopupMenu">
-        <item name="android:popupBackground">@drawable/menu_dropdown_panel_meuestilo</item>
-    </style>
+    <style name="Theme.Meuestilo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="DropDownListView.Meuestilo" parent="@style/Widget.AppCompat.ListView.DropDown">
-        <item name="android:listSelector">@drawable/selectable_background_meuestilo</item>
-    </style>
-
-    <style name="ActionBarTabStyle.Meuestilo" parent="@style/Widget.AppCompat.ActionBar.TabView">
-        <item name="android:background">@drawable/tab_indicator_ab_meuestilo</item>
-    </style>
-
-    <style name="DropDownNav.Meuestilo" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
-        <item name="android:background">@drawable/spinner_background_ab_meuestilo</item>
-        <item name="android:popupBackground">@drawable/menu_dropdown_panel_meuestilo</item>
-        <item name="android:dropDownSelector">@drawable/selectable_background_meuestilo</item>
-    </style>
-
-    <style name="ProgressBar.Meuestilo" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
-        <item name="android:progressDrawable">@drawable/progress_horizontal_meuestilo</item>
-    </style>
-
-    <style name="ActionButton.CloseMode.Meuestilo" parent="@style/Widget.AppCompat.ActionButton.CloseMode">
-        <item name="android:background">@drawable/btn_cab_done_meuestilo</item>
-    </style>
-
-    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
-    <style name="Theme.Meuestilo.Widget" parent="@style/Theme.AppCompat">
-        <item name="popupMenuStyle">@style/PopupMenu.Meuestilo</item>
-        <item name="dropDownListViewStyle">@style/DropDownListView.Meuestilo</item>
-    </style>
+    <style name="Theme.Meuestilo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
 </resources>
